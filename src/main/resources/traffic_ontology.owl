@@ -1,0 +1,2567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://www.w3.org/2003/11/swrl#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:webprotege="http://webprotege.stanford.edu/"
+	xmlns:has_speed_limit_km="http://webprotege.stanford.edu/has_speed_limit_km/"
+	xmlns:vehicle_has_speed_km="http://webprotege.stanford.edu/vehicle_has_speed_km/">
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+<!--  -->
+<!--  -->
+<!-- ################################################################# -->
+<!-- # -->
+<!-- #    Annotation properties -->
+<!-- # -->
+<!-- ################################################################# -->
+<!--  -->
+<!--  -->
+<!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+<rdf:Description rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- ################################################################# -->
+<!-- # -->
+<!-- #    Datatypes -->
+<!-- # -->
+<!-- ################################################################# -->
+<!--  -->
+<!--  -->
+<!-- http://webprotege.stanford.edu/R8BfBliTlqKlDCMvyxUszj1 -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/R8BfBliTlqKlDCMvyxUszj1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- ################################################################# -->
+<!-- # -->
+<!-- #    Object Properties -->
+<!-- # -->
+<!-- ################################################################# -->
+<!--  -->
+<!--  -->
+<!-- http://webprotege.stanford.edu/age -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/age">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/human_properties"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/human"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/animal_has_spieces -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/animal_has_spieces">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/animal"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal_has_spieces</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/conditional_discharge_length -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/conditional_discharge_length">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/conditional_discharge"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/criminal_record -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/criminal_record">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/human_properties"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/human"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/criminal_record"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/driver_makes_action -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/driver_makes_action">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/actions/decisions"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/driver"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/driver_action"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">driver_makes_action</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/gender -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/gender">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/human_properties"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/human"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/general_scenery_description -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/general_scenery_description">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general_scenery_description</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_at_the_back -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_at_the_back">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/surrounding_item_location"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_at_the_back</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_in_the_front -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_in_the_front">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/surrounding_item_location"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_in_the_front</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_laws -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_laws">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/scenery_details"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/laws"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_laws</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_on_the_left -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_on_the_left">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/surrounding_item_location"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_on_the_left</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_on_the_right -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_on_the_right">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/surrounding_item_location"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_on_the_right</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_pedestrian -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_pedestrian">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/general_scenery_description"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_pedestrian</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_time -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_time">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/general_scenery_description"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/scenario"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/time"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_time</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_type_of_crime -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_type_of_crime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/criminal_record"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/type_of_crime"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_type_of_crime</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_type_of_sentence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_type_of_sentence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/criminal_record"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/type_of_sentence"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_type_of_sentence</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_vehicle -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_vehicle">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/general_scenery_description"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/scenario"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_vehicle</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_weather -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_weather">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/general_scenery_description"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/scenario"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/weather"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_weather</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_within_close_distance -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_within_close_distance">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/surrounding_item_distance"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_within_close_distance</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_within_far_distance -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_within_far_distance">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/surrounding_item_distance"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_within_far_distance</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_within_very_close_distance -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_within_very_close_distance">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/surrounding_item_distance"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_within_very_close_distance</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/health_consequence_to -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/health_consequence_to">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#health_consequence"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health_consequence_to</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/human_makes_decision -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/human_makes_decision">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/actions/decisions"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/human"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/decision"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human_makes_decision</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/human_profession -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/human_profession">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/human_properties"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/human"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/human_profession"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/human_properties -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/human_properties">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/human"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/is_in_vehicle -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/is_in_vehicle">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/vehicle_conected"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/driver"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/passenger"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_in_vehicle</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/is_surrounding_item -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/is_surrounding_item">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_surrounding_item</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/moral_dilemma_presence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/moral_dilemma_presence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/moral_dilemma"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/move_forward -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/move_forward">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/human"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/pedestrian_has_location -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/pedestrian_has_location">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/scenery_details"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/pedestrian"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/legal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pedestrian_has_location</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/pedestrian_makes_action -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/pedestrian_makes_action">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/actions/decisions"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/pedestrian"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/pedestrian_action"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pedestrian_makes_action</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/profession -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/profession">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/human"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/road_connected -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/road_connected">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/scenery_details"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road_connected</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/road_has_type -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/road_has_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/road_connected"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/alley"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/city_streat"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/dirt_track"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/expressway"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/highway"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/private_road"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/provincial_road"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/trunk_road"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road_has_type</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/scenery_details -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/scenery_details">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scenery_details</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/stop -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/stop">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/human"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/surrounding_item_distance -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/surrounding_item_distance">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/scenery_details"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surrounding_item_distance</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/surrounding_item_location -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/surrounding_item_location">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/scenery_details"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/preposition"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surrounding_item_location</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/time_is -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/time_is">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/time"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/daytime"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/evening"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/morning"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/night"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/sunrise"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/sunset"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time_is</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/traffic_code_has -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/traffic_code_has">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/has_laws"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/traffic_code"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/priority_right"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/speed_limit"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/traffic_lights"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/traffic_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">traffic_code_has</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/traffic_type_is -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/traffic_type_is">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/traffic_code_has"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/traffic_type"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/left_hand_traffic"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/right_hand_traffic"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">traffic_type_is</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/trash -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/trash">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/type_of_committed_crime -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/type_of_committed_crime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type_of_committed_crime</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/vehicle_autonomy -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/vehicle_autonomy">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/vehicle_conected"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/autonomy_level"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle_autonomy</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/vehicle_conected -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/vehicle_conected">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/scenery_details"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle_conected</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/vehicle_has_driver -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/vehicle_has_driver">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/vehicle_conected"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/driver"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle_has_driver</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/vehicle_has_location -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/vehicle_has_location">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/vehicle_conected"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/preposition"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/road_segment"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle_has_location</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/vehicle_has_passenger -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/vehicle_has_passenger">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/vehicle_conected"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/passenger"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle_has_passenger</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/vehicle_has_type -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/vehicle_has_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/vehicle_conected"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/ambulance"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/baby_carriage"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/bicycle"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/bus"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/cement_mixer"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/dump_truck"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/fire_engine"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/horse_carriage"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/motorbike"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/passenger_car"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/police_car"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/rickshaw"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/scooter"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/segway"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/skateboard"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/tractor"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/train"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/tram"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/trolley"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/truck"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/van"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle_has_type</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/weather_is -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/weather_is">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/weather"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/fog"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/glaze"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/heavy_rain"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/shower"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/strong_wind"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/sunny"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weather_is</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/actions/decisions -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/actions/decisions">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">actions/decisions</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#has_broken_law -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#has_broken_law">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#law_consequence"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/laws"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#has_consequence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#has_consequence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/decision"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/consequence"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#has_decision -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#has_decision">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/scenario"/>
+	<rdfs:range rdf:resource="http://webprotege.stanford.edu/decision"/>
+</rdf:Description>
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- ################################################################# -->
+<!-- # -->
+<!-- #    Data properties -->
+<!-- # -->
+<!-- ################################################################# -->
+<!--  -->
+<!--  -->
+<!-- http://webprotege.stanford.edu/age -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/age">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/animal_has_species -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/animal_has_species">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/animal"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal_has_species</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/autonomy_level -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/autonomy_level">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/vehicle_properties"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/conditional_discharge_length -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/conditional_discharge_length">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/criminal_sentence_properties -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/criminal_sentence_properties">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/type_of_sentence"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">criminal_sentence_properties</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/gender -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/gender">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_lanes -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_lanes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/road_properties"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_lanes</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/human_properties -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/human_properties">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/judgement_passing_date -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/judgement_passing_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/criminal_sentence_properties"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/type_of_sentence"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">judgement_passing_date</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/moral_dilemma_presence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/moral_dilemma_presence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/pecuniary_penalty_height_dollars -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/pecuniary_penalty_height_dollars">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/criminal_sentence_properties"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/pecuniary_penalty"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pecuniary_penalty_height_dollars</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/profession -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/profession">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/restriction_of_liberty_length_years -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/restriction_of_liberty_length_years">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/criminal_sentence_properties"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/restriction_of_liberty"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">restriction_of_liberty_length_years</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/road_properties -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/road_properties">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road_properties</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/trash -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/trash">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/vehicle_properties -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/vehicle_properties">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle_properties</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/has_speed_limit_km/h -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/has_speed_limit_km/h">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/road_properties"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_speed_limit_km/h</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#has_material_value -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#has_material_value">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#material_consequence"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/vehicle_has_speed_km/h -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/vehicle_has_speed_km/h">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/vehicle_properties"/>
+	<rdfs:domain rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle_has_speed_km/h</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- ################################################################# -->
+<!-- # -->
+<!-- #    Classes -->
+<!-- # -->
+<!-- ################################################################# -->
+<!--  -->
+<!--  -->
+<!-- http://webprotege.stanford.edu/absolute_discharge -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/absolute_discharge">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/restriction_of_liberty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absolute_discharge</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/accelerate -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/accelerate">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/change_speed"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accelerate</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/act -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/act">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/decision"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">act</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/action -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/action">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/state_change"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">action</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/adult -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/adult">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/age"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/age -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/age">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/alley -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/alley">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alley</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/ambulance -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/ambulance">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ambulance</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/animal -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/animal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/at_the_back -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/at_the_back">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/preposition"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">at_the_back</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/autonomy_level -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/autonomy_level">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/baby_carriage -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/baby_carriage">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baby_carriage</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/bar_on_road -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/bar_on_road">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bar_on_road</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/based_on_daytime -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/based_on_daytime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/speed_limit"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">based_on_daytime</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/based_on_road_segment -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/based_on_road_segment">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/priority_right"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">based_on_road_segment</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/based_on_type_of_road -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/based_on_type_of_road">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/speed_limit"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">based_on_type_of_road</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/bicycle -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/bicycle">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bicycle</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/bridge -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/bridge">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bridge</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/burglary -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/burglary">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/type_of_crime"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burglary</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/bus -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/bus">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bus</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/bus_lane -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/bus_lane">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bus_lane</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/bushes -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/bushes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bushes</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/car_car -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/car_car">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/scenario"/>
+	<rdfs:subClassOf rdf:nodeID="genid1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://webprotege.stanford.edu/has_vehicle"/>
+	<owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/car_car">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">car_car</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/car_pedestrian -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/car_pedestrian">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/scenario"/>
+	<rdfs:subClassOf rdf:nodeID="genid2"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://webprotege.stanford.edu/has_pedestrian"/>
+	<owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/pedestrian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/car_pedestrian">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">car_pedestrian</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/cement_mixer -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/cement_mixer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cement_mixer</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/central_nature_strip -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/central_nature_strip">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">central_nature_strip</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/change_speed -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/change_speed">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/driver_action"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">change_speed</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/child -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/child">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/age"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">child</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/city_streat -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/city_streat">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">city_streat</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/close -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/close">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/distance"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">close</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/condition -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/condition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">condition</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/conditional_discharge -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/conditional_discharge">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/restriction_of_liberty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conditional_discharge</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/conditional_sentence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/conditional_sentence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/restriction_of_liberty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conditional_sentence</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/consequence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/consequence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consequence</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/criminal_damage -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/criminal_damage">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/type_of_crime"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">criminal_damage</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/criminal_record -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/criminal_record">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/other"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/cross_the_street -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/cross_the_street">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/pedestrian_action"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cross_the_street</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/crosswalking -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/crosswalking">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/car_pedestrian"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crosswalking</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/cycling_path -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/cycling_path">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cycling_path</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/daytime -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/daytime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/time"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daytime</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/decision -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/decision">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/state_change"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decision</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/dirt_track -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/dirt_track">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dirt_track</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/distance -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/distance">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distance</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/ditch -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/ditch">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ditch</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/driver -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/driver">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/human"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">driver</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/driver_action -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/driver_action">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/action"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">driver_action</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/driving_course -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/driving_course">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/driver_action"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">driving_course</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/driving_offences -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/driving_offences">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/type_of_crime"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">driving_offences</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/drug_offences -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/drug_offences">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/type_of_crime"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug_offences</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/dump_truck -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/dump_truck">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dump_truck</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/elderly -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/elderly">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/age"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elderly</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/emergency_lane -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/emergency_lane">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emergency_lane</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/evening -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/evening">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/time"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evening</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/expressway -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/expressway">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">expressway</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/far_away -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/far_away">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/distance"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">far_away</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/female -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/female">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/gender"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/field -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/field">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/fine -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/fine">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/pecuniary_penalty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fine</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/fire_engine -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/fire_engine">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fire_engine</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/fog -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/fog">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/weather"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fog</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/follow -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/follow">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/driving_course"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">follow</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/forest -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/forest">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">forest</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/fraud -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/fraud">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/type_of_crime"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fraud</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/gender -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/gender">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/glaze -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/glaze">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/weather"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glaze</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/green -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/green">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/traffic_lights"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">green</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/heavy_rain -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/heavy_rain">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/weather"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heavy_rain</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/highway -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/highway">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">highway</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/honk -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/honk">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/other_driver_action"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">honk</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/horse_carriage -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/horse_carriage">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horse_carriage</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/human -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/human">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/human_profession -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/human_profession">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/other"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/illegal_pedestrian_crossings -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/illegal_pedestrian_crossings">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/road_segment"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">illegal_pedestrian_crossings</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/imprisonment -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/imprisonment">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/restriction_of_liberty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imprisonment</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/in_a_vehicle -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/in_a_vehicle">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_a_vehicle</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/in_the_front -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/in_the_front">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/preposition"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_the_front</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/injured -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/injured">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#health_consequence"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">injured</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/intact -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/intact">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#health_consequence"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intact</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/intermittent_sentence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/intermittent_sentence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/restriction_of_liberty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intermittent_sentence</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/jaywalking -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/jaywalking">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/car_pedestrian"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jaywalking</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/killed -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/killed">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#health_consequence"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/laws -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/laws">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/other"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laws</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/left_hand_traffic -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/left_hand_traffic">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/traffic_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">left_hand_traffic</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/legal_pedestrian_crossings -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/legal_pedestrian_crossings">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/road_segment"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">legal_pedestrian_crossings</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/living_entity -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/living_entity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">living_entity</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/location -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/location">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">location</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/male -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/male">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/gender"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/moral_dilemma -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/moral_dilemma">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">moral_dilemma</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/morning -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/morning">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/time"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morning</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/motorbike -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/motorbike">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motorbike</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/move_forward -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/move_forward">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/driving_course"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/night -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/night">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/time"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">night</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/no_lights -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/no_lights">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/traffic_lights"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no_lights</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/noise_barrier -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/noise_barrier">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noise_barrier</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/non_living_entity -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/non_living_entity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non_living_entity</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/number -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/number">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/on_the_left -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/on_the_left">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/preposition"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">on_the_left</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/on_the_right -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/on_the_right">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/preposition"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">on_the_right</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/one_way_road -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/one_way_road">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one_way_road</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/other -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/other">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/other_driver_action -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/other_driver_action">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/driver_action"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other_driver_action</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/out_of_vehicle -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/out_of_vehicle">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">out_of_vehicle</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/overtake -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/overtake">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/driving_course"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">overtake</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/overtaking -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/overtaking">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/car_car"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">overtaking</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/passenger -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/passenger">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/human"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/pet"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/stock"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">passenger</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/passenger_car -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/passenger_car">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">passenger_car</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/pavement -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/pavement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pavement</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/pecuniary_penalty -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/pecuniary_penalty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/type_of_sentence"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pecuniary_penalty</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/pedestrian -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/pedestrian">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/human"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/pet"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/stock"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/wild"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pedestrian</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/pedestrian_action -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/pedestrian_action">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/action"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pedestrian_action</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/pedestrian_crossing -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/pedestrian_crossing">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/legal_pedestrian_crossings"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pedestrian_crossing</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/pedestrian_crossing_trash -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/pedestrian_crossing_trash">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pedestrian_crossing_trash</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/pet -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/pet">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/animal"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pet</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/police_car -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/police_car">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">police_car</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/police_on_traffic_duty -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/police_on_traffic_duty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/human"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">police_on_traffic_duty</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/preposition -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/preposition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/trash"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preposition</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/priority_right -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/priority_right">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/traffic_code"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">priority_right</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/private_road -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/private_road">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">private_road</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/probation -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/probation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/restriction_of_liberty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">probation</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/provincial_road -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/provincial_road">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provincial_road</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/railway -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/railway">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">railway</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/railway_crossing -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/railway_crossing">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">railway_crossing</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/red -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/red">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/traffic_lights"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/restriction_of_liberty -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/restriction_of_liberty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/type_of_sentence"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">restriction_of_liberty</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/rickshaw -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/rickshaw">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rickshaw</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/right_hand_traffic -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/right_hand_traffic">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/traffic_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">right_hand_traffic</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/road_segment -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/road_segment">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/based_on_road_segment"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/location"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road_segment</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/road_sign_post -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/road_sign_post">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road_sign_post</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/road_type -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/road_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/based_on_type_of_road"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/location"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">road_type</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/robbery -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/robbery">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/type_of_crime"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">robbery</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/rock -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/rock">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rock</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/roundabout -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/roundabout">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roundabout</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/run -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/run">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/cross_the_street"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">run</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/scenario -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/scenario">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:nodeID="genid3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://webprotege.stanford.edu/has_laws"/>
+	<owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/laws"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/scenario">
+	<rdfs:subClassOf rdf:nodeID="genid4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid4">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://webprotege.stanford.edu/has_time"/>
+	<owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/time"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/scenario">
+	<rdfs:subClassOf rdf:nodeID="genid5"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://webprotege.stanford.edu/has_vehicle"/>
+	<owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/scenario">
+	<rdfs:subClassOf rdf:nodeID="genid6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="genid6">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://webprotege.stanford.edu/has_weather"/>
+	<owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/weather"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/scenario">
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scenario</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/scooter -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/scooter">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scooter</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/security_side_barrier -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/security_side_barrier">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">security_side_barrier</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/segment_under_construction -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/segment_under_construction">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">segment_under_construction</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/segway -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/segway">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">segway</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/shower -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/shower">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/weather"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shower</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/skateboard -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/skateboard">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skateboard</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/slow_down -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/slow_down">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/change_speed"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slow_down</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/snow -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/snow">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/weather"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/speed_bump -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/speed_bump">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">speed_bump</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/speed_limit -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/speed_limit">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/traffic_code"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">speed_limit</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/state_change -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/state_change">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">state_change</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/state_road -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/state_road">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">state_road</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/stay_idle -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/stay_idle">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/decision"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stay_idle</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/stock -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/stock">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/animal"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stock</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/stop -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/stop">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/change_speed"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/straight_segment -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/straight_segment">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">straight_segment</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/street_crossing -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/street_crossing">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">street_crossing</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/street_lamp -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/street_lamp">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">street_lamp</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/street_tidy -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/street_tidy">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">street_tidy</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/strong_wind -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/strong_wind">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/weather"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strong_wind</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/sunny -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/sunny">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/weather"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sunny</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/sunrise -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/sunrise">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/time"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sunrise</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/sunset -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/sunset">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/time"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sunset</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/surrounding -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/surrounding">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surrounding</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/suspended_sentence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/suspended_sentence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/restriction_of_liberty"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suspended_sentence</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/theft -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/theft">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/type_of_crime"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theft</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/time -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/time">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/based_on_daytime"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/condition"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/to_left -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/to_left">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/driving_course"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to_left</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/to_right -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/to_right">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/driving_course"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to_right</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/tractor -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/tractor">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tractor</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/traffic_code -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/traffic_code">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/laws"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">traffic_code</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/traffic_island -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/traffic_island">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">traffic_island</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/traffic_lights -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/traffic_lights">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/traffic_code"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">traffic_lights</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/traffic_type -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/traffic_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/traffic_code"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">traffic_type</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/train -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/train">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">train</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/tram -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/tram">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tram</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/trash -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/trash">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/tree -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/tree">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tree</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/trial_still_in_process -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/trial_still_in_process">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/type_of_sentence"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trial_still_in_process</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/trolley -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/trolley">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trolley</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/truck -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/truck">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">truck</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/trunk_road -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/trunk_road">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/road_type"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trunk_road</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/tunnel -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/tunnel">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tunnel</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/turn -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/turn">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turn</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/turn_left -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/turn_left">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/driving_course"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turn_left</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/turn_right -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/turn_right">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/driving_course"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turn_right</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/two_ways_road -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/two_ways_road">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/illegal_pedestrian_crossings"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two_ways_road</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/type_of_crime -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/type_of_crime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/criminal_record"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type_of_crime</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/type_of_sentence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/type_of_sentence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/criminal_record"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type_of_sentence</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/van -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/van">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">van</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/vehicle -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/vehicle">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/non_living_entity"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vehicle</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/very_close -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/very_close">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/distance"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very_close</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/wait_at_crossing -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/wait_at_crossing">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/pedestrian_action"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wait_at_crossing</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/walk -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/walk">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/cross_the_street"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">walk</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/wall -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/wall">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wall</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/weather -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/weather">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/condition"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weather</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/wild -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/wild">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/animal"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wild</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/yellow -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/yellow">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/traffic_lights"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yellow</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/0 -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/0">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/number"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/1 -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/number"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/2 -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/number"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/3 -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/number"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/4 -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/4">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/number"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/5 -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/number"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/>50 -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/&gt;50">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/number"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;50</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/autonomous_lvl_0:_no_automation -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/autonomous_lvl_0:_no_automation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/autonomy_level"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomous_lvl_0:_no_automation</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/autonomous_lvl_1:_driver_assistance -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/autonomous_lvl_1:_driver_assistance">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/autonomy_level"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomous_lvl_1:_driver_assistance</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/autonomous_lvl_2:_partial_automation -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/autonomous_lvl_2:_partial_automation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/autonomy_level"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomous_lvl_2:_partial_automation</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/autonomous_lvl_3:_conditional_automation -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/autonomous_lvl_3:_conditional_automation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/autonomy_level"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomous_lvl_3:_conditional_automation</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/autonomous_lvl_4:_high_automation -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/autonomous_lvl_4:_high_automation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/autonomy_level"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomous_lvl_4:_high_automation</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/autonomous_lvl_5:_full_automation -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/autonomous_lvl_5:_full_automation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/autonomy_level"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomous_lvl_5:_full_automation</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/cliff/edge -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/cliff/edge">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/surrounding"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cliff/edge</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#disability -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#disability">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#health_consequence"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#health_consequence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#health_consequence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/consequence"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#law_consequence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#law_consequence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/consequence"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#lightly_injured -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#lightly_injured">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#health_consequence"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#material_consequence -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#material_consequence">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/consequence"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#severly_injured -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#severly_injured">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/BDGSqwMbfBgw7pUJ8IOnJ1#health_consequence"/>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/sexual offences -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/sexualoffences">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/type_of_crime"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sexual offences</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/{11:50} -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/{11:50}">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/number"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{11:50}</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://webprotege.stanford.edu/{6:10} -->
+
+<rdf:Description rdf:about="http://webprotege.stanford.edu/{6:10}">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/number"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{6:10}</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- ################################################################# -->
+<!-- # -->
+<!-- #    Individuals -->
+<!-- # -->
+<!-- ################################################################# -->
+
+<!-- ################################################################# -->
+<!-- # -->
+<!-- #    Rules -->
+<!-- # -->
+<!-- ################################################################# -->
+<!--  -->
+<!--  -->
+
+</rdf:RDF>

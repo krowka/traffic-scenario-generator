@@ -1,15 +1,21 @@
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 
+import java.io.File;
+
 public class Main {
 
     public static void main(String[] args) throws OWLOntologyCreationException {
-        // just for tests
+        String fileName = "traffic_ontology.owl";
+        String directoryPath = System.getProperty("user.dir") + "/src/main/resources/";
+
+        File ontologyFile = new File(directoryPath + fileName);
+
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-        OWLOntology ontology = manager.loadOntology(IRI.create("https://protege.stanford.edu/ontologies/pizza/pizza.owl"));
-        System.out.println("Ontology Loaded...");
-        System.out.println("Ontology : " + ontology.getOntologyID());
-        System.out.println("Format      : " + manager.getOntologyFormat(ontology));
+        OWLOntology ontology = manager.loadOntologyFromOntologyDocument(ontologyFile);
+        OWLDataFactory dataFactory = manager.getOWLDataFactory();
+		
+		// use scenario generators
     }
 
 }
