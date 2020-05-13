@@ -22,6 +22,12 @@ buildNumber.properties
 .idea/*/*
 .idea/*/*/*
 
+# TARGET
+target
+target/*
+target/*/*
+target/*/*/*
+
 *.iml
 
 # Generated files
