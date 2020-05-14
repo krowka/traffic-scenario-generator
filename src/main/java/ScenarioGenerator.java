@@ -20,58 +20,56 @@ import java.util.Random;
 import java.util.Set;
 
 public abstract class ScenarioGenerator {
-    OWLOntologyManager manager;
-    OWLOntology ontology;
-    OWLDataFactory dataFactory;
-    OWLReasoner reasoner;
-    String baseIRI;
+    Configuration cfg;
 
     String scenarioNr = "1";
     Map<String, Integer> idMap = new HashMap<>();
 
-    public ScenarioGenerator(OWLOntologyManager manager, OWLOntology ontology, OWLDataFactory dataFactory, OWLReasoner reasoner,  String baseIRI) {
-        this.manager = manager;
-        this.ontology = ontology;
-        this.dataFactory = dataFactory;
-        this.baseIRI = baseIRI;
-        this.reasoner = reasoner;
+    public ScenarioGenerator(Configuration configuration) {
+        this.cfg = configuration;
     }
 
     public abstract void generate();
 
     protected OWLIndividual getIndividual(String name) {
-        OWLClass iClass = dataFactory.getOWLClass(IRI.create(baseIRI + name));
+        String iriName = cfg.getBaseIRI() + name;
+        OWLDataFactory dataFactory = cfg.getDataFactory();
+        OWLClass iClass = dataFactory.getOWLClass(IRI.create(iriName));
         OWLIndividual individual = dataFactory.getOWLNamedIndividual(getUniqueIRI(name));
 
         // sets individual's type as iClass
         OWLClassAssertionAxiom ax = dataFactory.getOWLClassAssertionAxiom(iClass, individual);
-        manager.addAxiom(ontology, ax);
+        cfg.getManager().addAxiom(cfg.getOntology(), ax);
 
         return individual;
     }
 
     protected void addObjectPropertyAssertion(String objectProperty, OWLIndividual individual_1, OWLIndividual individual_2) {
-        OWLObjectProperty owlObjectProperty = dataFactory.getOWLObjectProperty(IRI.create(baseIRI +  objectProperty));
+        String iriName = cfg.getBaseIRI() + objectProperty;
+        OWLDataFactory dataFactory = cfg.getDataFactory();
+        OWLObjectProperty owlObjectProperty = dataFactory.getOWLObjectProperty(IRI.create(iriName));
         OWLObjectPropertyAssertionAxiom ax = dataFactory.getOWLObjectPropertyAssertionAxiom(owlObjectProperty, individual_1, individual_2);
-        manager.addAxiom(ontology, ax);
+        cfg.getManager().addAxiom(cfg.getOntology(), ax);
     }
 
     protected void addDataPropertyAssertion(String dataProperty, OWLIndividual individual, int value) {
-        OWLDataProperty owlDataProperty = dataFactory.getOWLDataProperty(IRI.create(baseIRI +  dataProperty));
+        String iriName = cfg.getBaseIRI() + dataProperty;
+        OWLDataFactory dataFactory = cfg.getDataFactory();
+        OWLDataProperty owlDataProperty = dataFactory.getOWLDataProperty(IRI.create(iriName));
         OWLDataPropertyAssertionAxiom ax = dataFactory.getOWLDataPropertyAssertionAxiom(owlDataProperty, individual, value);
-        manager.addAxiom(ontology, ax);
+        cfg.getManager().addAxiom(cfg.getOntology(), ax);
     }
 
 
     protected IRI getUniqueIRI(String name) {
         int id = idMap.getOrDefault(name, 0) + 1;
         idMap.put(name, id);
-        return IRI.create(baseIRI + name + "_" + scenarioNr + "_" + id);
+        return IRI.create(cfg.getBaseIRI() + name + "_" + scenarioNr + "_" + id);
     }
 
     protected OWLClass getRandomSubclass(String owlClass) {
-        OWLClass vehicle = dataFactory.getOWLClass(IRI.create(baseIRI + "vehicle"));
-        Set<OWLClass> subclasses = reasoner.getSubClasses(vehicle, true).getFlattened();
+        OWLClass vehicle = cfg.getDataFactory().getOWLClass(IRI.create(cfg.getBaseIRI() + "vehicle"));
+        Set<OWLClass> subclasses = cfg.getReasoner().getSubClasses(vehicle, true).getFlattened();
         List<OWLClass> subclassesList = new ArrayList<>(subclasses);
         Random rand = new Random();
         int index = rand.nextInt(subclassesList.size());

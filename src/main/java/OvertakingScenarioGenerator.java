@@ -14,8 +14,8 @@ import java.util.Set;
 
 public class OvertakingScenarioGenerator extends ScenarioGenerator{
 
-    public OvertakingScenarioGenerator(OWLOntologyManager manager, OWLOntology ontology, OWLDataFactory dataFactory, OWLReasoner reasoner, String baseIRI) {
-        super(manager, ontology, dataFactory, reasoner, baseIRI);
+    public OvertakingScenarioGenerator(Configuration configuration) {
+        super(configuration);
     }
 
 

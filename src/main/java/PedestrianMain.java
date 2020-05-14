@@ -10,17 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
-public class Main {
-//    private void generate() throws FileNotFoundException, OWLOntologyCreationException, OWLOntologyStorageException {
-        // right-hand driving
-        // OWLClass rhdClass = dataFactory.getOWLClass(IRI.create(baseIRI + "overtaking"));
-        // OWLObjectProperty has_lawsOP = dataFactory.getOWLObjectProperty(IRI.create(baseIRI + "has_vehicle"));
-
-        // OWLObjectPropertyAssertionAxiom assertion3 = dataFactory.getOWLObjectPropertyAssertionAxiom(has_lawsOP, overtakingIndividual, rhdClass);
-        // AddAxiom addAxiomChange3 = new AddAxiom(ontology, assertion3);
-        // manager.applyChange(addAxiomChange3);
-//    }
-
+public class PedestrianMain {
 
     public static void main(String[] args) throws OWLOntologyCreationException, FileNotFoundException, OWLOntologyStorageException {
         String fileName = "traffic_ontology.owl";
@@ -38,16 +28,17 @@ public class Main {
         String baseIRI = "http://webprotege.stanford.edu/";
         Configuration configuration = new Configuration(manager, ontology, dataFactory, reasoner, baseIRI);
 
-        OvertakingScenarioGenerator g = new OvertakingScenarioGenerator(configuration);
+        PedestrianScenarioGenerator g = new PedestrianScenarioGenerator(configuration);
         g.generate();
 
-        OutputStream outputFile = new FileOutputStream(directoryPath + "changed_" + fileName);
+        OutputStream outputFile = new FileOutputStream(directoryPath + "pedestrian_changed_" + fileName);
         try {
             manager.saveOntology(ontology, outputFile);
-            System.out.println("All changes saved in original file: changed_" + fileName);
+            System.out.println("All changes saved in original file: pedestrian_changed_" + fileName);
         } finally {
             IOUtils.closeQuietly(outputFile);
         }
     }
+
 
 }
