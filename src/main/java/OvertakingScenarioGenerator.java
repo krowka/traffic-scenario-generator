@@ -1,17 +1,21 @@
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
+
+import java.util.Set;
 
 
 public class OvertakingScenarioGenerator extends ScenarioGenerator{
 
-    public OvertakingScenarioGenerator(OWLOntologyManager manager, OWLOntology ontology, OWLDataFactory dataFactory, String baseIRI) {
-        super(manager, ontology, dataFactory, baseIRI);
+    public OvertakingScenarioGenerator(OWLOntologyManager manager, OWLOntology ontology, OWLDataFactory dataFactory, OWLReasoner reasoner, String baseIRI) {
+        super(manager, ontology, dataFactory, reasoner, baseIRI);
     }
 
 
@@ -20,6 +24,8 @@ public class OvertakingScenarioGenerator extends ScenarioGenerator{
         OWLIndividual vehicleI_1 = getVehicle();
         OWLIndividual vehicleI_2 = getVehicle();
         OWLIndividual weatherI = getWeather();
+        OWLIndividual driver = getIndividual("driver");
+
 
         addObjectPropertyAssertion("has_vehicle", overtakingI, vehicleI_1);
         addObjectPropertyAssertion("has_vehicle", overtakingI, vehicleI_2);
@@ -41,6 +47,11 @@ public class OvertakingScenarioGenerator extends ScenarioGenerator{
     private OWLIndividual getWeather() {
         // TODO change to any weather
         return getIndividual("sunny");
+    }
+
+    private OWLIndividual getPerson() {
+        // TODO change to any weather
+        return getIndividual("driver");
     }
 
 }

@@ -1,6 +1,9 @@
 import org.apache.commons.io.IOUtils;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
+import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -32,10 +35,12 @@ public class Main {
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
         OWLOntology ontology = manager.loadOntologyFromOntologyDocument(ontologyFile);
         OWLDataFactory dataFactory = manager.getOWLDataFactory();
+        OWLReasonerFactory owlReasonerFactory = new StructuralReasonerFactory();
+        OWLReasoner reasoner = owlReasonerFactory.createReasoner(ontology);
 
         String baseIRI = "http://webprotege.stanford.edu/";
 
-        OvertakingScenarioGenerator g = new OvertakingScenarioGenerator(manager, ontology, dataFactory, baseIRI);
+        OvertakingScenarioGenerator g = new OvertakingScenarioGenerator(manager, ontology, dataFactory, reasoner, baseIRI);
         g.generate();
 
         OutputStream outputFile = new FileOutputStream(directoryPath + "changed_" + fileName);

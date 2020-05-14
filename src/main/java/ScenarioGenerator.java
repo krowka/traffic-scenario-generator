@@ -9,25 +9,32 @@ import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Random;
+import java.util.Set;
 
 public abstract class ScenarioGenerator {
     OWLOntologyManager manager;
     OWLOntology ontology;
     OWLDataFactory dataFactory;
-
+    OWLReasoner reasoner;
     String baseIRI;
 
     String scenarioNr = "1";
     Map<String, Integer> idMap = new HashMap<>();
 
-    public ScenarioGenerator(OWLOntologyManager manager, OWLOntology ontology, OWLDataFactory dataFactory, String baseIRI) {
+    public ScenarioGenerator(OWLOntologyManager manager, OWLOntology ontology, OWLDataFactory dataFactory, OWLReasoner reasoner,  String baseIRI) {
         this.manager = manager;
         this.ontology = ontology;
         this.dataFactory = dataFactory;
         this.baseIRI = baseIRI;
+        this.reasoner = reasoner;
     }
 
     public abstract void generate();
@@ -60,5 +67,14 @@ public abstract class ScenarioGenerator {
         int id = idMap.getOrDefault(name, 0) + 1;
         idMap.put(name, id);
         return IRI.create(baseIRI + name + "_" + scenarioNr + "_" + id);
+    }
+
+    protected OWLClass getRandomSubclass(String owlClass) {
+        OWLClass vehicle = dataFactory.getOWLClass(IRI.create(baseIRI + "vehicle"));
+        Set<OWLClass> subclasses = reasoner.getSubClasses(vehicle, true).getFlattened();
+        List<OWLClass> subclassesList = new ArrayList<>(subclasses);
+        Random rand = new Random();
+        int index = rand.nextInt(subclassesList.size());
+        return subclassesList.get(index);
     }
 }
