@@ -11,16 +11,6 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 
 public class Main {
-//    private void generate() throws FileNotFoundException, OWLOntologyCreationException, OWLOntologyStorageException {
-        // right-hand driving
-        // OWLClass rhdClass = dataFactory.getOWLClass(IRI.create(baseIRI + "overtaking"));
-        // OWLObjectProperty has_lawsOP = dataFactory.getOWLObjectProperty(IRI.create(baseIRI + "has_vehicle"));
-
-        // OWLObjectPropertyAssertionAxiom assertion3 = dataFactory.getOWLObjectPropertyAssertionAxiom(has_lawsOP, overtakingIndividual, rhdClass);
-        // AddAxiom addAxiomChange3 = new AddAxiom(ontology, assertion3);
-        // manager.applyChange(addAxiomChange3);
-//    }
-
 
     public static void main(String[] args) throws OWLOntologyCreationException, FileNotFoundException, OWLOntologyStorageException {
         String fileName = "traffic_ontology.owl";
@@ -35,11 +25,13 @@ public class Main {
         OWLDataFactory dataFactory = manager.getOWLDataFactory();
         OWLReasonerFactory owlReasonerFactory = new StructuralReasonerFactory();
         OWLReasoner reasoner = owlReasonerFactory.createReasoner(ontology);
+
         String baseIRI = "http://webprotege.stanford.edu/";
+
         Configuration configuration = new Configuration(manager, ontology, dataFactory, reasoner, baseIRI);
 
         OvertakingScenarioGenerator g = new OvertakingScenarioGenerator(configuration);
-        g.generate();
+        g.generate(9);
 
         OutputStream outputFile = new FileOutputStream(directoryPath + "changed_" + fileName);
         try {

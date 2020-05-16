@@ -19,39 +19,38 @@ public class OvertakingScenarioGenerator extends ScenarioGenerator{
     }
 
 
-    public void generate() {
-        OWLIndividual overtakingI = getScenario();
-        OWLIndividual vehicleI_1 = getVehicle();
-        OWLIndividual vehicleI_2 = getVehicle();
-        OWLIndividual weatherI = getWeather();
-        OWLIndividual driver = getIndividual("driver");
+    public void generate(int num) {
+        for(int i = 0; i < num; i++) {
+            setup();
 
+            OWLIndividual overtakingI = getIndividual("overtaking");
 
-        addObjectPropertyAssertion("has_vehicle", overtakingI, vehicleI_1);
-        addObjectPropertyAssertion("has_vehicle", overtakingI, vehicleI_2);
-        addObjectPropertyAssertion("has_weather", overtakingI, weatherI);
+            OWLIndividual vehicleI_1 = getSubclassIndividual("vehicle");
+            OWLIndividual vehicleI_2 = getSubclassIndividual("vehicle");
 
-        addDataPropertyAssertion("vehicle_has_speed_kmph", vehicleI_1, 60);
-        addDataPropertyAssertion("vehicle_has_speed_kmph", vehicleI_2, 70);
+            OWLIndividual weatherI = getSubclassIndividual("weather");
+
+            OWLIndividual locationI =  getSubclassIndividual("road_type");
+
+            OWLIndividual driverI_1 = getIndividual("driver");
+            OWLIndividual driverI_2 = getIndividual("driver");
+
+            OWLIndividual passengerI =  getIndividual("passenger");
+
+            addObjectPropertyAssertion("has_vehicle", overtakingI, vehicleI_1);
+            addObjectPropertyAssertion("has_vehicle", overtakingI, vehicleI_2);
+            addObjectPropertyAssertion("has_weather", overtakingI, weatherI);
+            addObjectPropertyAssertion("vehicle_has_driver", vehicleI_1, driverI_1);
+            addObjectPropertyAssertion("vehicle_has_driver", vehicleI_2, driverI_2);
+            addObjectPropertyAssertion("vehicle_has_location", vehicleI_1, locationI);
+            addObjectPropertyAssertion("vehicle_has_passenger", vehicleI_1, passengerI);
+
+            addDataPropertyAssertion("vehicle_has_speed_kmph", vehicleI_1, 60);
+            addDataPropertyAssertion("vehicle_has_speed_kmph", vehicleI_2, 80);
+            addDataPropertyAssertion("has_speed_limit_kmph", locationI, 60);
+            addDataPropertyAssertion("has_lanes", locationI, 2);
+        }
     }
 
-    private OWLIndividual getScenario() {
-        return getIndividual("overtaking");
-    }
-
-    private OWLIndividual getVehicle() {
-        // TODO change to any vehicle
-        return getIndividual("vehicle");
-    }
-
-    private OWLIndividual getWeather() {
-        // TODO change to any weather
-        return getIndividual("sunny");
-    }
-
-    private OWLIndividual getPerson() {
-        // TODO change to any weather
-        return getIndividual("driver");
-    }
-
+    // TODO pack generating into functions
 }

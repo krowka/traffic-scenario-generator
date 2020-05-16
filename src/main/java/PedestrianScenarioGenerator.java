@@ -7,7 +7,7 @@ public class PedestrianScenarioGenerator extends ScenarioGenerator {
     }
 
 
-    public void generate() {
+    public void generate(int num) {
         OWLIndividual crosswalkingIndividual = getIndividual("crosswalking");
         OWLIndividual vehicleIndividual = getIndividual("vehicle");
         OWLIndividual pedestrian = getIndividual("pedestrian");

@@ -25,11 +25,12 @@ public class PedestrianMain {
         OWLDataFactory dataFactory = manager.getOWLDataFactory();
         OWLReasonerFactory owlReasonerFactory = new StructuralReasonerFactory();
         OWLReasoner reasoner = owlReasonerFactory.createReasoner(ontology);
+
         String baseIRI = "http://webprotege.stanford.edu/";
         Configuration configuration = new Configuration(manager, ontology, dataFactory, reasoner, baseIRI);
 
         PedestrianScenarioGenerator g = new PedestrianScenarioGenerator(configuration);
-        g.generate();
+        g.generate(1);
 
         OutputStream outputFile = new FileOutputStream(directoryPath + "pedestrian_changed_" + fileName);
         try {

@@ -21,24 +21,49 @@ import java.util.Set;
 
 public abstract class ScenarioGenerator {
     Configuration cfg;
+    Random rand = new Random();
 
-    String scenarioNr = "1";
+    int scenarioNr = 0;
     Map<String, Integer> idMap = new HashMap<>();
 
     public ScenarioGenerator(Configuration configuration) {
         this.cfg = configuration;
     }
 
-    public abstract void generate();
+    public abstract void generate(int num);
+
+    protected void setup() {
+        scenarioNr++;
+        idMap.clear();
+    }
 
     protected OWLIndividual getIndividual(String name) {
         String iriName = cfg.getBaseIRI() + name;
         OWLDataFactory dataFactory = cfg.getDataFactory();
+
         OWLClass iClass = dataFactory.getOWLClass(IRI.create(iriName));
         OWLIndividual individual = dataFactory.getOWLNamedIndividual(getUniqueIRI(name));
 
         // sets individual's type as iClass
         OWLClassAssertionAxiom ax = dataFactory.getOWLClassAssertionAxiom(iClass, individual);
+        cfg.getManager().addAxiom(cfg.getOntology(), ax);
+
+        return individual;
+    }
+
+    protected OWLIndividual getSubclassIndividual(String name) {
+        String iriName = cfg.getBaseIRI() + name;
+        OWLDataFactory dataFactory = cfg.getDataFactory();
+
+        OWLClass iClass = dataFactory.getOWLClass(IRI.create(iriName));
+        List<OWLClass> subclassesList = new ArrayList<>(cfg.getReasoner().getSubClasses(iClass, true).getFlattened());
+
+        OWLIndividual individual = dataFactory.getOWLNamedIndividual(getUniqueIRI(name));
+
+        OWLClass chosenClass = subclassesList.get(rand.nextInt(subclassesList.size()));
+
+        // sets individual's type as iClass
+        OWLClassAssertionAxiom ax = dataFactory.getOWLClassAssertionAxiom(chosenClass, individual);
         cfg.getManager().addAxiom(cfg.getOntology(), ax);
 
         return individual;
@@ -60,19 +85,9 @@ public abstract class ScenarioGenerator {
         cfg.getManager().addAxiom(cfg.getOntology(), ax);
     }
 
-
     protected IRI getUniqueIRI(String name) {
         int id = idMap.getOrDefault(name, 0) + 1;
         idMap.put(name, id);
         return IRI.create(cfg.getBaseIRI() + name + "_" + scenarioNr + "_" + id);
-    }
-
-    protected OWLClass getRandomSubclass(String owlClass) {
-        OWLClass vehicle = cfg.getDataFactory().getOWLClass(IRI.create(cfg.getBaseIRI() + "vehicle"));
-        Set<OWLClass> subclasses = cfg.getReasoner().getSubClasses(vehicle, true).getFlattened();
-        List<OWLClass> subclassesList = new ArrayList<>(subclasses);
-        Random rand = new Random();
-        int index = rand.nextInt(subclassesList.size());
-        return subclassesList.get(index);
     }
 }
