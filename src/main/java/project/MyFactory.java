@@ -5856,6 +5856,10 @@ public class MyFactory implements CodeGenerationFactory {
 		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_WEATHER, DefaultWeather.class);
     }
 
+    public Weather createWeatherSubclass(String name) {
+        return delegate.createSubclassWrappedIndividual(name, Vocabulary.CLASS_WEATHER, DefaultWeather.class);
+    }
+
     /**
      * Gets an instance of type Weather with the given name.  Does not modify the underlying ontology.
      * @param name the name of the OWL named individual to be retrieved.

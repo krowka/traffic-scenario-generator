@@ -21,7 +21,7 @@ public class CarOvertakingSG extends ScenarioGenerator {
         Vehicle vehicle1 = factory.createVehicle(getUniqueName("vehicle"));
         Vehicle vehicle2 = factory.createVehicle(getUniqueName("vehicle"));
 
-        Weather weather = factory.createWeather(getUniqueName("weather"));
+        Weather weather = factory.createWeatherSubclass(getUniqueName("weather"));
 
         Road_type roadType = factory.createRoad_type(getUniqueName("road_type"));
 
