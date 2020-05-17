@@ -62,11 +62,20 @@ public class FactoryHelper {
         OWLNamedIndividual i = owlDataFactory.getOWLNamedIndividual(IRI.create(name));
         List<OWLClass> subClassList = new ArrayList<>(reasoner.getSubClasses(type, true).getFlattened());
         OWLClass subClass = subClassList.get(rand.nextInt(subClassList.size()));
+        String subclassIri = subClass.toString();
+        String str = subclassIri.substring(subclassIri.lastIndexOf("/") + 1, subclassIri.length() - 1);
+        String className = "project.impl.Default" + str.substring(0, 1).toUpperCase() + str.substring(1);
+        Class<? extends X> clazz = null;
+        try {
+            clazz = (Class<? extends X>) Class.forName(className);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         manager.addAxiom(owlOntology, owlDataFactory.getOWLClassAssertionAxiom(subClass, i));
         if (!inference.canAs(i, type)) {
             return null;
         }
-        return getWrappedIndividual(name, c);
+        return getWrappedIndividual(name, clazz);
     }
 
     public <X extends WrappedIndividualImpl> X getWrappedIndividual(String name, OWLClass type, Class<X> c) {
