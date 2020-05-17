@@ -134,37 +134,6 @@ public class MyFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://webprotege.stanford.edu/act
-     */
-
-    {
-        javaMapping.add("http://webprotege.stanford.edu/act", Act.class, DefaultAct.class);
-    }
-
-    /**
-     * Creates an instance of type Act.  Modifies the underlying ontology.
-     */
-    public Act createAct(String name) {
-		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_ACT, DefaultAct.class);
-    }
-
-    /**
-     * Gets an instance of type Act with the given name.  Does not modify the underlying ontology.
-     * @param name the name of the OWL named individual to be retrieved.
-     */
-    public Act getAct(String name) {
-		return delegate.getWrappedIndividual(name, Vocabulary.CLASS_ACT, DefaultAct.class);
-    }
-
-    /**
-     * Gets all instances of Act from the ontology.
-     */
-    public Collection<? extends Act> getAllActInstances() {
-		return delegate.getWrappedIndividuals(Vocabulary.CLASS_ACT, DefaultAct.class);
-    }
-
-
-    /* ***************************************************
      * Class http://webprotege.stanford.edu/action
      */
 
@@ -4563,37 +4532,6 @@ public class MyFactory implements CodeGenerationFactory {
      */
     public Collection<? extends State_road> getAllState_roadInstances() {
 		return delegate.getWrappedIndividuals(Vocabulary.CLASS_STATE_ROAD, DefaultState_road.class);
-    }
-
-
-    /* ***************************************************
-     * Class http://webprotege.stanford.edu/stay_idle
-     */
-
-    {
-        javaMapping.add("http://webprotege.stanford.edu/stay_idle", Stay_idle.class, DefaultStay_idle.class);
-    }
-
-    /**
-     * Creates an instance of type Stay_idle.  Modifies the underlying ontology.
-     */
-    public Stay_idle createStay_idle(String name) {
-		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_STAY_IDLE, DefaultStay_idle.class);
-    }
-
-    /**
-     * Gets an instance of type Stay_idle with the given name.  Does not modify the underlying ontology.
-     * @param name the name of the OWL named individual to be retrieved.
-     */
-    public Stay_idle getStay_idle(String name) {
-		return delegate.getWrappedIndividual(name, Vocabulary.CLASS_STAY_IDLE, DefaultStay_idle.class);
-    }
-
-    /**
-     * Gets all instances of Stay_idle from the ontology.
-     */
-    public Collection<? extends Stay_idle> getAllStay_idleInstances() {
-		return delegate.getWrappedIndividuals(Vocabulary.CLASS_STAY_IDLE, DefaultStay_idle.class);
     }
 
 

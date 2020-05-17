@@ -1,4 +1,7 @@
+package generator;
+
 import project.MyFactory;
+import project.Scenario;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,7 +16,7 @@ public abstract class ScenarioGenerator {
         this.factory = factory;
     }
 
-    public abstract void generate();
+    public abstract Scenario generate();
 
     protected String getUniqueName(String name) {
         int id = idMap.getOrDefault(name, 0) + 1;
