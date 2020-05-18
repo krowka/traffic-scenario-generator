@@ -1,3 +1,4 @@
+import generator.AnimalOnRoadSG;
 import generator.CarOvertakingSG;
 import generator.ScenarioGenerator;
 import org.semanticweb.owlapi.apibinding.OWLManager;
@@ -27,7 +28,9 @@ public class Main {
         MyFactory factory = new MyFactory(ontology);
 
         ScenarioGenerator generator;
-        generator = new CarOvertakingSG(factory);
+//        generator = new CarOvertakingSG(factory);
+//        generator.generate();
+        generator = new AnimalOnRoadSG(factory);
         generator.generate();
 
         factory.saveOwlOntology();

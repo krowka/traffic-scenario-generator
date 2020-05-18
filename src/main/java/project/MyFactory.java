@@ -303,6 +303,10 @@ public class MyFactory implements CodeGenerationFactory {
 		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_ANIMAL, DefaultAnimal.class);
     }
 
+    public Animal createAnimalSubclass(String name) {
+        return delegate.createSubclassWrappedIndividual(name, Vocabulary.CLASS_ANIMAL, DefaultAnimal.class);
+    }
+
     /**
      * Gets an instance of type Animal with the given name.  Does not modify the underlying ontology.
      * @param name the name of the OWL named individual to be retrieved.
@@ -3961,6 +3965,10 @@ public class MyFactory implements CodeGenerationFactory {
 		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_ROAD_TYPE, DefaultRoad_type.class);
     }
 
+    public Road_type createRoad_typeSubclass(String name) {
+        return delegate.createSubclassWrappedIndividual(name, Vocabulary.CLASS_ROAD_TYPE, DefaultRoad_type.class);
+    }
+
     /**
      * Gets an instance of type Road_type with the given name.  Does not modify the underlying ontology.
      * @param name the name of the OWL named individual to be retrieved.
@@ -4860,6 +4868,10 @@ public class MyFactory implements CodeGenerationFactory {
 		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_SURROUNDING, DefaultSurrounding.class);
     }
 
+    public Surrounding createSurroundingSubclass(String name) {
+        return delegate.createSubclassWrappedIndividual(name, Vocabulary.CLASS_SURROUNDING, DefaultSurrounding.class);
+    }
+
     /**
      * Gets an instance of type Surrounding with the given name.  Does not modify the underlying ontology.
      * @param name the name of the OWL named individual to be retrieved.
@@ -4950,7 +4962,11 @@ public class MyFactory implements CodeGenerationFactory {
      * Creates an instance of type Time.  Modifies the underlying ontology.
      */
     public Time createTime(String name) {
-		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_TIME, DefaultTime.class);
+        return delegate.createWrappedIndividual(name, Vocabulary.CLASS_TIME, DefaultTime.class);
+    }
+
+    public Time createTimeSubclass(String name) {
+        return delegate.createSubclassWrappedIndividual(name, Vocabulary.CLASS_TIME, DefaultTime.class);
     }
 
     /**
