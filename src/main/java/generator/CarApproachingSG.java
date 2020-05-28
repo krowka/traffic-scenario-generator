@@ -1,6 +1,7 @@
 package generator;
 
 import project.Driver;
+import project.Entity;
 import project.MyFactory;
 import project.Passenger;
 import project.Road_type;
@@ -16,49 +17,25 @@ public class CarApproachingSG extends ScenarioGenerator  {
         super(factory);
     }
 
+    Vehicle vehicle2;
+    Driver driver2;
+
     @Override
-    public Scenario generate() {
-        Scenario scenario = factory.createScenario(getUniqueName("scenario"));
+    public Scenario generate(int scenarioId) {
+        scenario = super.generate(scenarioId);
 
-        Vehicle vehicle1 = factory.createVehicle(getUniqueName("vehicle"));
-        Vehicle vehicle2 = factory.createVehicle(getUniqueName("vehicle"));
+        vehicle2 = factory.createVehicle(getUniqueName("vehicle", scenarioId));
 
-        Weather weather = factory.createWeatherSubclass(getUniqueName("weather"));
+        driver2 = factory.createDriver(getUniqueName("driver", scenarioId));
 
-        Time time = factory.createTimeSubclass(getUniqueName("time"));
-
-        Road_type roadType = factory.createRoad_typeSubclass(getUniqueName("road_type"));
-
-        Driver driver1 = factory.createDriver(getUniqueName("driver"));
-        Driver driver2 = factory.createDriver(getUniqueName("driver"));
-
-        Surrounding surrounding1 = factory.createSurroundingSubclass(getUniqueName("surrounding"));
-        Surrounding surrounding2 = factory.createSurroundingSubclass(getUniqueName("surrounding"));
-
-        Passenger passenger = factory.createPassenger(getUniqueName("passenger"));
-
-        scenario.addHas_vehicle(vehicle1);
-        scenario.addHas_vehicle(vehicle2);
-        scenario.addHas_weather(weather);
-        scenario.addHas_time(time);
-
-        vehicle1.addVehicle_has_driver(driver1);
-        vehicle1.addVehicle_has_passenger(passenger);
-        vehicle1.addVehicle_has_location(roadType);
-        vehicle1.addVehicle_has_speed_kmph(60);
-        vehicle1.addHas_on_the_left(surrounding2);
-        vehicle1.addHas_on_the_right(surrounding1);
-        vehicle1.addHas_at_the_back(vehicle2);
+        vehicle.addHas_at_the_back(vehicle2);
 
         vehicle2.addVehicle_has_driver(driver2);
         vehicle2.addVehicle_has_location(roadType);
         vehicle2.addVehicle_has_speed_kmph(80);
-        vehicle2.addHas_on_the_left(surrounding2);
-        vehicle2.addHas_on_the_right(surrounding1);
-        vehicle2.addHas_in_the_front(vehicle1);
-
-        roadType.addHas_speed_limit_kmph(70);
-        roadType.addHas_lanes(2);
+        vehicle2.addHas_on_the_right((Entity) surrounding.get("RIGHT"));
+        vehicle2.addHas_on_the_left((Entity) surrounding.get("LEFT"));
+        vehicle2.addHas_in_the_front(vehicle);
 
         return scenario;
     }

@@ -3218,7 +3218,11 @@ public class MyFactory implements CodeGenerationFactory {
      * Creates an instance of type Passenger.  Modifies the underlying ontology.
      */
     public Passenger createPassenger(String name) {
-		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_PASSENGER, DefaultPassenger.class);
+        return delegate.createWrappedIndividual(name, Vocabulary.CLASS_PASSENGER, DefaultPassenger.class);
+    }
+
+    public Passenger createPassengerSubclass(String name) {
+        return delegate.createSubclassWrappedIndividual(name, Vocabulary.CLASS_PASSENGER, DefaultPassenger.class);
     }
 
     /**
@@ -3343,6 +3347,10 @@ public class MyFactory implements CodeGenerationFactory {
      */
     public Pedestrian createPedestrian(String name) {
 		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_PEDESTRIAN, DefaultPedestrian.class);
+    }
+
+    public Pedestrian createPedestrianSubclass(String name) {
+        return delegate.createSubclassWrappedIndividual(name, Vocabulary.CLASS_PEDESTRIAN, DefaultPedestrian.class);
     }
 
     /**
