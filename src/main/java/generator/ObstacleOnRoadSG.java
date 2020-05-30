@@ -1,19 +1,12 @@
 package generator;
 
-import project.Animal;
-import project.Driver;
 import project.MyFactory;
-import project.Passenger;
-import project.Road_type;
 import project.Scenario;
 import project.Surrounding;
-import project.Time;
-import project.Vehicle;
-import project.Weather;
 
 import java.util.Random;
 
-public class ObstacleOnRoadSG extends ScenarioGenerator  {
+public class ObstacleOnRoadSG extends BaseScenarioGenerator {
 
     public ObstacleOnRoadSG(MyFactory factory) {
         super(factory);

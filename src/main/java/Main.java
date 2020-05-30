@@ -1,24 +1,15 @@
 import generator.AnimalOnRoadSG;
-import generator.CarApproachingSG;
-import generator.CarOvertakingSG;
 import generator.ObstacleOnRoadSG;
-import generator.PedestrianIllegallyCrossingSG;
-import generator.PedestrianOnCrosswalkSG;
-import generator.ScenarioGenerator;
+import generator.BaseScenarioGenerator;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import project.MyFactory;
-import project.Passenger;
-import project.Scenario;
-import project.Vehicle;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Main {
 
@@ -35,8 +26,9 @@ public class Main {
         OWLOntology ontology = manager.loadOntologyFromOntologyDocument(ontologyFile);
 
         MyFactory factory = new MyFactory(ontology);
+        String baseIRI = "http://webprotege.stanford.edu/";
 
-        ScenarioGenerator generator;
+        BaseScenarioGenerator generator;
         generator = new AnimalOnRoadSG(factory);
 //        generator = new CarApproachingSG(factory);
 //        generator = new CarOvertakingSG(factory);
@@ -44,7 +36,6 @@ public class Main {
 //        generator = new PedestrianIllegallyCrossingSG(factory);
 //        generator = new PedestrianOnCrosswalkSG(factory);
         generator.generate(5, 1);
-//        generator.generate();
         factory.saveOwlOntology();
     }
 

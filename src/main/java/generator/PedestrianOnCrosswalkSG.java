@@ -1,19 +1,11 @@
 package generator;
 
-import project.Driver;
-import project.Illegal_pedestrian_crossings;
 import project.MyFactory;
-import project.Passenger;
 import project.Pedestrian;
-import project.Road_type;
 import project.Scenario;
 import project.Street_crossing;
-import project.Surrounding;
-import project.Time;
-import project.Vehicle;
-import project.Weather;
 
-public class PedestrianOnCrosswalkSG extends ScenarioGenerator  {
+public class PedestrianOnCrosswalkSG extends BaseScenarioGenerator {
 
     public PedestrianOnCrosswalkSG(MyFactory factory) {
         super(factory);

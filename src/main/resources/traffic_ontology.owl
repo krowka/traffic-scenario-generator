@@ -2790,7 +2790,7 @@
     <!-- obstacle_3_1 -->
 
     <owl:NamedIndividual rdf:about="obstacle_3_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/tree"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/rock"/>
     </owl:NamedIndividual>
     
 
@@ -2811,50 +2811,10 @@
     
 
 
-    <!-- passenger_1_1 -->
-
-    <owl:NamedIndividual rdf:about="passenger_1_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/person"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- passenger_1_2 -->
-
-    <owl:NamedIndividual rdf:about="passenger_1_2">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/stock"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- passenger_2_1 -->
 
     <owl:NamedIndividual rdf:about="passenger_2_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/person"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- passenger_2_2 -->
-
-    <owl:NamedIndividual rdf:about="passenger_2_2">
         <rdf:type rdf:resource="http://webprotege.stanford.edu/driver"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- passenger_3_1 -->
-
-    <owl:NamedIndividual rdf:about="passenger_3_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/pet"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- passenger_3_2 -->
-
-    <owl:NamedIndividual rdf:about="passenger_3_2">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/pet"/>
     </owl:NamedIndividual>
     
 
@@ -2870,7 +2830,15 @@
     <!-- passenger_4_2 -->
 
     <owl:NamedIndividual rdf:about="passenger_4_2">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/stock"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/project/person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- passenger_5_1 -->
+
+    <owl:NamedIndividual rdf:about="passenger_5_1">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/pet"/>
     </owl:NamedIndividual>
     
 
@@ -2878,7 +2846,7 @@
     <!-- road_type_1_1 -->
 
     <owl:NamedIndividual rdf:about="road_type_1_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/alley"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/private_road"/>
         <webprotege:has_lanes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</webprotege:has_lanes>
         <has_speed_limit_km:h rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</has_speed_limit_km:h>
     </owl:NamedIndividual>
@@ -2888,7 +2856,7 @@
     <!-- road_type_2_1 -->
 
     <owl:NamedIndividual rdf:about="road_type_2_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/private_road"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/city_streat"/>
         <webprotege:has_lanes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</webprotege:has_lanes>
         <has_speed_limit_km:h rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</has_speed_limit_km:h>
     </owl:NamedIndividual>
@@ -2898,7 +2866,7 @@
     <!-- road_type_3_1 -->
 
     <owl:NamedIndividual rdf:about="road_type_3_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/dirt_track"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/trunk_road"/>
         <webprotege:has_lanes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</webprotege:has_lanes>
         <has_speed_limit_km:h rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</has_speed_limit_km:h>
     </owl:NamedIndividual>
@@ -2908,7 +2876,7 @@
     <!-- road_type_4_1 -->
 
     <owl:NamedIndividual rdf:about="road_type_4_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/dirt_track"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/expressway"/>
         <webprotege:has_lanes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</webprotege:has_lanes>
         <has_speed_limit_km:h rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</has_speed_limit_km:h>
     </owl:NamedIndividual>
@@ -2983,7 +2951,7 @@
     <!-- surrounding_1_1 -->
 
     <owl:NamedIndividual rdf:about="surrounding_1_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/field"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/noise_barrier"/>
     </owl:NamedIndividual>
     
 
@@ -2991,7 +2959,7 @@
     <!-- surrounding_1_2 -->
 
     <owl:NamedIndividual rdf:about="surrounding_1_2">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/forest"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/road_sign_post"/>
     </owl:NamedIndividual>
     
 
@@ -2999,7 +2967,7 @@
     <!-- surrounding_2_1 -->
 
     <owl:NamedIndividual rdf:about="surrounding_2_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/traffic_island"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/bushes"/>
     </owl:NamedIndividual>
     
 
@@ -3007,7 +2975,7 @@
     <!-- surrounding_2_2 -->
 
     <owl:NamedIndividual rdf:about="surrounding_2_2">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/noise_barrier"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/wall"/>
     </owl:NamedIndividual>
     
 
@@ -3023,7 +2991,7 @@
     <!-- surrounding_3_2 -->
 
     <owl:NamedIndividual rdf:about="surrounding_3_2">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/speed_bump"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/road_sign_post"/>
     </owl:NamedIndividual>
     
 
@@ -3031,7 +2999,7 @@
     <!-- surrounding_4_1 -->
 
     <owl:NamedIndividual rdf:about="surrounding_4_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/rock"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/field"/>
     </owl:NamedIndividual>
     
 
@@ -3039,7 +3007,7 @@
     <!-- surrounding_4_2 -->
 
     <owl:NamedIndividual rdf:about="surrounding_4_2">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/street_tidy"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/field"/>
     </owl:NamedIndividual>
     
 
@@ -3047,7 +3015,7 @@
     <!-- surrounding_5_1 -->
 
     <owl:NamedIndividual rdf:about="surrounding_5_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/forest"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/pavement"/>
     </owl:NamedIndividual>
     
 
@@ -3055,7 +3023,7 @@
     <!-- surrounding_5_2 -->
 
     <owl:NamedIndividual rdf:about="surrounding_5_2">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/wall"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/railway"/>
     </owl:NamedIndividual>
     
 
@@ -3063,7 +3031,7 @@
     <!-- time_1_1 -->
 
     <owl:NamedIndividual rdf:about="time_1_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/daytime"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/morning"/>
     </owl:NamedIndividual>
     
 
@@ -3071,7 +3039,7 @@
     <!-- time_2_1 -->
 
     <owl:NamedIndividual rdf:about="time_2_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/sunrise"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/morning"/>
     </owl:NamedIndividual>
     
 
@@ -3079,7 +3047,7 @@
     <!-- time_3_1 -->
 
     <owl:NamedIndividual rdf:about="time_3_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/evening"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/sunrise"/>
     </owl:NamedIndividual>
     
 
@@ -3087,7 +3055,7 @@
     <!-- time_4_1 -->
 
     <owl:NamedIndividual rdf:about="time_4_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/sunrise"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/daytime"/>
     </owl:NamedIndividual>
     
 
@@ -3095,7 +3063,7 @@
     <!-- time_5_1 -->
 
     <owl:NamedIndividual rdf:about="time_5_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/sunset"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/evening"/>
     </owl:NamedIndividual>
     
 
@@ -3103,14 +3071,12 @@
     <!-- vehicle_1_1 -->
 
     <owl:NamedIndividual rdf:about="vehicle_1_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/horse_carriage"/>
         <webprotege:has_in_the_front rdf:resource="obstacle_1_1"/>
         <webprotege:has_on_the_left rdf:resource="surrounding_1_1"/>
         <webprotege:has_on_the_right rdf:resource="surrounding_1_2"/>
         <webprotege:vehicle_has_driver rdf:resource="driver_1_1"/>
         <webprotege:vehicle_has_location rdf:resource="road_type_1_1"/>
-        <webprotege:vehicle_has_passenger rdf:resource="passenger_1_1"/>
-        <webprotege:vehicle_has_passenger rdf:resource="passenger_1_2"/>
         <vehicle_has_speed_km:h rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</vehicle_has_speed_km:h>
     </owl:NamedIndividual>
     
@@ -3119,14 +3085,13 @@
     <!-- vehicle_2_1 -->
 
     <owl:NamedIndividual rdf:about="vehicle_2_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/trolley"/>
         <webprotege:has_in_the_front rdf:resource="obstacle_2_1"/>
         <webprotege:has_on_the_left rdf:resource="surrounding_2_1"/>
         <webprotege:has_on_the_right rdf:resource="surrounding_2_2"/>
         <webprotege:vehicle_has_driver rdf:resource="driver_2_1"/>
         <webprotege:vehicle_has_location rdf:resource="road_type_2_1"/>
         <webprotege:vehicle_has_passenger rdf:resource="passenger_2_1"/>
-        <webprotege:vehicle_has_passenger rdf:resource="passenger_2_2"/>
         <vehicle_has_speed_km:h rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</vehicle_has_speed_km:h>
     </owl:NamedIndividual>
     
@@ -3135,14 +3100,12 @@
     <!-- vehicle_3_1 -->
 
     <owl:NamedIndividual rdf:about="vehicle_3_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/passenger_car"/>
         <webprotege:has_in_the_front rdf:resource="obstacle_3_1"/>
         <webprotege:has_on_the_left rdf:resource="surrounding_3_1"/>
         <webprotege:has_on_the_right rdf:resource="surrounding_3_2"/>
         <webprotege:vehicle_has_driver rdf:resource="driver_3_1"/>
         <webprotege:vehicle_has_location rdf:resource="road_type_3_1"/>
-        <webprotege:vehicle_has_passenger rdf:resource="passenger_3_1"/>
-        <webprotege:vehicle_has_passenger rdf:resource="passenger_3_2"/>
         <vehicle_has_speed_km:h rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</vehicle_has_speed_km:h>
     </owl:NamedIndividual>
     
@@ -3151,7 +3114,7 @@
     <!-- vehicle_4_1 -->
 
     <owl:NamedIndividual rdf:about="vehicle_4_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/fire_engine"/>
         <webprotege:has_in_the_front rdf:resource="obstacle_4_1"/>
         <webprotege:has_on_the_left rdf:resource="surrounding_4_1"/>
         <webprotege:has_on_the_right rdf:resource="surrounding_4_2"/>
@@ -3167,12 +3130,13 @@
     <!-- vehicle_5_1 -->
 
     <owl:NamedIndividual rdf:about="vehicle_5_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/vehicle"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/motorbike"/>
         <webprotege:has_in_the_front rdf:resource="obstacle_5_1"/>
         <webprotege:has_on_the_left rdf:resource="surrounding_5_1"/>
         <webprotege:has_on_the_right rdf:resource="surrounding_5_2"/>
         <webprotege:vehicle_has_driver rdf:resource="driver_5_1"/>
         <webprotege:vehicle_has_location rdf:resource="road_type_5_1"/>
+        <webprotege:vehicle_has_passenger rdf:resource="passenger_5_1"/>
         <vehicle_has_speed_km:h rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</vehicle_has_speed_km:h>
     </owl:NamedIndividual>
     
@@ -3181,7 +3145,7 @@
     <!-- weather_1_1 -->
 
     <owl:NamedIndividual rdf:about="weather_1_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/shower"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/snow"/>
     </owl:NamedIndividual>
     
 
@@ -3189,7 +3153,7 @@
     <!-- weather_2_1 -->
 
     <owl:NamedIndividual rdf:about="weather_2_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/snow"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/strong_wind"/>
     </owl:NamedIndividual>
     
 
@@ -3197,7 +3161,7 @@
     <!-- weather_3_1 -->
 
     <owl:NamedIndividual rdf:about="weather_3_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/fog"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/heavy_rain"/>
     </owl:NamedIndividual>
     
 
@@ -3205,7 +3169,7 @@
     <!-- weather_4_1 -->
 
     <owl:NamedIndividual rdf:about="weather_4_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/snow"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/glaze"/>
     </owl:NamedIndividual>
     
 
@@ -3213,7 +3177,7 @@
     <!-- weather_5_1 -->
 
     <owl:NamedIndividual rdf:about="weather_5_1">
-        <rdf:type rdf:resource="http://webprotege.stanford.edu/snow"/>
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/heavy_rain"/>
     </owl:NamedIndividual>
     
 

@@ -3,17 +3,10 @@ package generator;
 import project.Driver;
 import project.Entity;
 import project.MyFactory;
-import project.Passenger;
-import project.Road_type;
 import project.Scenario;
-import project.Surrounding;
-import project.Time;
 import project.Vehicle;
-import project.Weather;
 
-import java.util.ArrayList;
-
-public class CarOvertakingSG extends ScenarioGenerator {
+public class CarOvertakingSG extends BaseScenarioGenerator {
 
     public CarOvertakingSG(MyFactory factory) {
         super(factory);

@@ -3,15 +3,10 @@ package generator;
 import project.Driver;
 import project.Entity;
 import project.MyFactory;
-import project.Passenger;
-import project.Road_type;
 import project.Scenario;
-import project.Surrounding;
-import project.Time;
 import project.Vehicle;
-import project.Weather;
 
-public class CarApproachingSG extends ScenarioGenerator  {
+public class CarApproachingSG extends BaseScenarioGenerator {
 
     public CarApproachingSG(MyFactory factory) {
         super(factory);
