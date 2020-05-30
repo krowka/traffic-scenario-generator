@@ -8,10 +8,10 @@ import project.Vehicle;
 
 public class CarOvertakingSG extends BaseScenarioGenerator {
 
-    public CarOvertakingSG(MyFactory factory) {
-        super(factory);
+    public CarOvertakingSG(MyFactory factory, String baseIRI) {
+        super(factory, baseIRI);
     }
-
+    /*
     Vehicle vehicle2;
     Driver driver2;
 
@@ -35,6 +35,6 @@ public class CarOvertakingSG extends BaseScenarioGenerator {
 
         return scenario;
     }
-
+    */
 
 }

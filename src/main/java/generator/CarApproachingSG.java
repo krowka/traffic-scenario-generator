@@ -8,30 +8,30 @@ import project.Vehicle;
 
 public class CarApproachingSG extends BaseScenarioGenerator {
 
-    public CarApproachingSG(MyFactory factory) {
-        super(factory);
+    public CarApproachingSG(MyFactory factory, String baseIRI) {
+        super(factory, baseIRI);
     }
 
-    Vehicle vehicle2;
-    Driver driver2;
-
     @Override
-    public Scenario generate(int scenarioId) {
-        scenario = super.generate(scenarioId);
+    public CarApproachingModel generate(int scenarioId) {
+        CarApproachingModel model = (CarApproachingModel) super.generate(scenarioId);
 
-        vehicle2 = factory.createVehicle(getUniqueName("vehicle", scenarioId));
+        Vehicle vehicle = factory.createVehicle(getUniqueName("vehicle", scenarioId));
 
-        driver2 = factory.createDriver(getUniqueName("driver", scenarioId));
+        Driver driver = factory.createDriver(getUniqueName("driver", scenarioId));
 
-        vehicle.addHas_at_the_back(vehicle2);
+        model.getVehicle().addHas_at_the_back(vehicle);
 
-        vehicle2.addVehicle_has_driver(driver2);
-        vehicle2.addVehicle_has_location(roadType);
-        vehicle2.addVehicle_has_speed_kmph(80);
-        vehicle2.addHas_on_the_right((Entity) surrounding.get("RIGHT"));
-        vehicle2.addHas_on_the_left((Entity) surrounding.get("LEFT"));
-        vehicle2.addHas_in_the_front(vehicle);
+        vehicle.addVehicle_has_driver(driver);
+        vehicle.addVehicle_has_location(model.getRoadType());
+        vehicle.addVehicle_has_speed_kmph(80);
+        vehicle.addHas_on_the_right(model.getSurrounding().get("RIGHT"));
+        vehicle.addHas_on_the_left(model.getSurrounding().get("LEFT"));
+        vehicle.addHas_in_the_front(vehicle);
 
-        return scenario;
+        model.setVehice2(vehicle);
+        model.setDriver2(driver);
+
+        return model;
     }
 }

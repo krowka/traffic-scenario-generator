@@ -8,10 +8,10 @@ import java.util.Random;
 
 public class ObstacleOnRoadSG extends BaseScenarioGenerator {
 
-    public ObstacleOnRoadSG(MyFactory factory) {
-        super(factory);
+    public ObstacleOnRoadSG(MyFactory factory, String baseIRI) {
+        super(factory, baseIRI);
     }
-
+    /*
     Surrounding obstacle;
 
     @Override
@@ -34,4 +34,5 @@ public class ObstacleOnRoadSG extends BaseScenarioGenerator {
             obstacle = factory.createTree(getUniqueName("obstacle", scenarioId));
         return obstacle;
     }
+    */
 }

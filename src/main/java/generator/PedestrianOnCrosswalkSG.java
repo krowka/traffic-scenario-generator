@@ -7,10 +7,10 @@ import project.Street_crossing;
 
 public class PedestrianOnCrosswalkSG extends BaseScenarioGenerator {
 
-    public PedestrianOnCrosswalkSG(MyFactory factory) {
-        super(factory);
+    public PedestrianOnCrosswalkSG(MyFactory factory, String baseIRI) {
+        super(factory, baseIRI);
     }
-
+    /*
     Pedestrian pedestrian;
     Street_crossing pedestrianLocation;
 
@@ -28,4 +28,5 @@ public class PedestrianOnCrosswalkSG extends BaseScenarioGenerator {
 
         return scenario;
     }
+    */
 }

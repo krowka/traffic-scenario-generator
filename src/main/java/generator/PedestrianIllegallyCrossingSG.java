@@ -7,10 +7,10 @@ import project.Scenario;
 
 public class PedestrianIllegallyCrossingSG extends BaseScenarioGenerator {
 
-    public PedestrianIllegallyCrossingSG(MyFactory factory) {
-        super(factory);
+    public PedestrianIllegallyCrossingSG(MyFactory factory, String baseIRI) {
+        super(factory, baseIRI);
     }
-
+    /*
     Pedestrian pedestrian;
     Illegal_pedestrian_crossings pedestrianLocation;
 
@@ -28,4 +28,5 @@ public class PedestrianIllegallyCrossingSG extends BaseScenarioGenerator {
 
         return scenario;
     }
+    */
 }

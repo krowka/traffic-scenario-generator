@@ -6,20 +6,20 @@ import project.Scenario;
 
 public class AnimalOnRoadSG extends BaseScenarioGenerator {
 
-    public AnimalOnRoadSG(MyFactory factory) {
-        super(factory);
+    public AnimalOnRoadSG(MyFactory factory, String baseIRI) {
+        super(factory, baseIRI);
     }
 
-    Animal animal;
-
     @Override
-    public Scenario generate(int scenarioId) {
-        scenario = super.generate(scenarioId);
+    public AnimalOnRoadModel generate(int scenarioId) {
+        AnimalOnRoadModel model = (AnimalOnRoadModel) super.generate(scenarioId);
 
-        animal = factory.createAnimalSubclass(getUniqueName("animal", scenarioId));
+        Animal animal = factory.createAnimalSubclass(getUniqueName("animal", scenarioId));
 
-        vehicle.addHas_in_the_front(animal);
+        model.getVehicle().addHas_in_the_front(animal);
 
-        return scenario;
+        model.setAnimal(animal);
+
+        return model;
     }
 }
