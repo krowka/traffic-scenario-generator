@@ -36,7 +36,12 @@ public class BaseScenarioGenerator {
      * @return string name_id, where id is unique number
      */
     protected String getUniqueName(String name) {
-        return getUniqueName(name, 0);
+        int id = idMap.getOrDefault(name, 0);
+        idMap.put(name, id + 1);
+        if(id == 0)
+            return name;
+        else
+            return name + "_" + id;
     }
 
     /**
@@ -46,11 +51,7 @@ public class BaseScenarioGenerator {
      * @return string scenarioNr_name_id, where id is unique number
      */
     protected String getUniqueName(String name, int scenarioNr) {
-        if(scenarioNr != 0)
-            name =  scenarioNr + "_" + name;
-        int id = idMap.getOrDefault(name, 0) + 1;
-        idMap.put(name, id);
-        return name + "_" + id;
+        return getUniqueName(scenarioNr + "_" + name);
     }
 
     /**
