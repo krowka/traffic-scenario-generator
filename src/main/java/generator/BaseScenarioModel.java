@@ -9,6 +9,7 @@ import project.Time;
 import project.Vehicle;
 import project.Weather;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -85,5 +86,35 @@ public class BaseScenarioModel {
 
     protected void setSurrounding(Map<String, Surrounding> surrounding) {
         this.surrounding = surrounding;
+    }
+
+    public BaseScenarioModel() {};
+
+    /**
+     * Copy construction, used to create subclass objects from superclass object
+     * Uses reflection
+     */
+    public BaseScenarioModel(BaseScenarioModel originalObj) {
+        try {
+            Field fields[];
+            Class  currentClass = originalObj.getClass();
+
+            if (!currentClass.isAssignableFrom(this.getClass()))
+                throw new IllegalArgumentException("New object must be the same class or a subclass of original");
+
+            // Spin through all fields of the class & all its superclasses
+            do
+            {
+                fields = currentClass.getDeclaredFields();
+
+                for (int i = 0; i < fields.length; i++)
+                {
+                    fields[i].set(this, fields[i].get(originalObj));
+                }
+                currentClass = currentClass.getSuperclass();
+            } while (currentClass != null);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
     }
 }

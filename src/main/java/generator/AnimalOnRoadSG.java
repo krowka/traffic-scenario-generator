@@ -12,7 +12,7 @@ public class AnimalOnRoadSG extends BaseScenarioGenerator {
 
     @Override
     public AnimalOnRoadModel generate(int scenarioId) {
-        AnimalOnRoadModel model = (AnimalOnRoadModel) super.generate(scenarioId);
+        AnimalOnRoadModel model = new AnimalOnRoadModel(super.generate(scenarioId));
 
         Animal animal = factory.createAnimalSubclass(getUniqueName("animal", scenarioId));
 

@@ -11,30 +11,28 @@ public class CarOvertakingSG extends BaseScenarioGenerator {
     public CarOvertakingSG(MyFactory factory, String baseIRI) {
         super(factory, baseIRI);
     }
-    /*
-    Vehicle vehicle2;
-    Driver driver2;
 
     @Override
-    public Scenario generate(int scenarioId) {
-        scenario = super.generate(scenarioId);
+    public CarOvertakingModel generate(int scenarioId) {
+        CarOvertakingModel model = new CarOvertakingModel(super.generate(scenarioId));
 
-        vehicle2 = factory.createVehicle(getUniqueName("vehicle", scenarioId));
+        Vehicle vehicle = factory.createVehicle(getUniqueName("vehicle", scenarioId));
 
-        driver2 = factory.createDriver(getUniqueName("driver", scenarioId));
-
-        scenario.addHas_vehicle(vehicle2);
+        Driver driver = factory.createDriver(getUniqueName("driver", scenarioId));
 
         vehicle.addHas_on_the_left(vehicle);
 
-        vehicle2.addVehicle_has_driver(driver);
-        vehicle2.addVehicle_has_location(roadType);
-        vehicle2.addVehicle_has_speed_kmph(80);
-        vehicle2.addHas_on_the_right((Entity) surrounding.get("RIGHT"));
-        vehicle2.addHas_on_the_left((Entity) surrounding.get("LEFT"));
+        vehicle.addVehicle_has_driver(driver);
+        vehicle.addVehicle_has_location(model.getRoadType());
+        vehicle.addVehicle_has_speed_kmph(80);
+        vehicle.addHas_on_the_right(model.getSurrounding().get("RIGHT"));
+        vehicle.addHas_on_the_left(model.getSurrounding().get("LEFT"));
 
-        return scenario;
+        model.setVehice2(vehicle);
+        model.setDriver2(driver);
+
+        return model;
     }
-    */
+
 
 }

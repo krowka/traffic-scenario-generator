@@ -1,6 +1,9 @@
+import generator.AnimalOnRoadModel;
 import generator.AnimalOnRoadSG;
+import generator.BaseScenarioModel;
 import generator.ObstacleOnRoadSG;
 import generator.BaseScenarioGenerator;
+import generator.PedestrianIllegallyCrossingSG;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
@@ -29,13 +32,16 @@ public class Main {
         String baseIRI = "http://webprotege.stanford.edu/";
 
         BaseScenarioGenerator generator;
-        generator = new AnimalOnRoadSG(factory);
-//        generator = new CarApproachingSG(factory);
-//        generator = new CarOvertakingSG(factory);
-        generator = new ObstacleOnRoadSG(factory);
-//        generator = new PedestrianIllegallyCrossingSG(factory);
-//        generator = new PedestrianOnCrosswalkSG(factory);
-        generator.generate(5, 1);
+//        generator = new AnimalOnRoadSG(factory, baseIRI);
+//        generator = new CarApproachingSG(factory, baseIRI);
+//        generator = new CarOvertakingSG(factory, baseIRI);
+//        generator = new ObstacleOnRoadSG(factory, baseIRI);
+        generator = new PedestrianIllegallyCrossingSG(factory, baseIRI);
+//        generator = new PedestrianOnCrosswalkSG(factory, baseIRI);
+        generator.generate();
+
+
+
         factory.saveOwlOntology();
     }
 

@@ -11,18 +11,18 @@ public class ObstacleOnRoadSG extends BaseScenarioGenerator {
     public ObstacleOnRoadSG(MyFactory factory, String baseIRI) {
         super(factory, baseIRI);
     }
-    /*
-    Surrounding obstacle;
 
     @Override
-    public Scenario generate(int scenarioId) {
-        scenario = super.generate(scenarioId);
+    public ObstacleOnRoadModel generate(int scenarioId) {
+        ObstacleOnRoadModel model = new ObstacleOnRoadModel(super.generate(scenarioId));
 
-        obstacle = getObstacle(scenarioId);
+        Surrounding obstacle = getObstacle(scenarioId);
 
-        vehicle.addHas_in_the_front(obstacle);
+        model.getVehicle().addHas_in_the_front(obstacle);
 
-        return scenario;
+        model.setObstacle(obstacle);
+
+        return model;
     }
 
     private Surrounding getObstacle(int scenarioId) {
@@ -34,5 +34,5 @@ public class ObstacleOnRoadSG extends BaseScenarioGenerator {
             obstacle = factory.createTree(getUniqueName("obstacle", scenarioId));
         return obstacle;
     }
-    */
+
 }

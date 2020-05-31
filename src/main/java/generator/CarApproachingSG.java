@@ -14,7 +14,7 @@ public class CarApproachingSG extends BaseScenarioGenerator {
 
     @Override
     public CarApproachingModel generate(int scenarioId) {
-        CarApproachingModel model = (CarApproachingModel) super.generate(scenarioId);
+        CarApproachingModel model = new CarApproachingModel(super.generate(scenarioId));
 
         Vehicle vehicle = factory.createVehicle(getUniqueName("vehicle", scenarioId));
 
