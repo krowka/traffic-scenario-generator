@@ -1,9 +1,9 @@
 package generator;
 
+import model.PedestrianIllegallyCrossingModel;
 import project.Illegal_pedestrian_crossings;
 import project.MyFactory;
 import project.Pedestrian;
-import project.Scenario;
 
 public class PedestrianIllegallyCrossingSG extends BaseScenarioGenerator {
 
@@ -15,8 +15,8 @@ public class PedestrianIllegallyCrossingSG extends BaseScenarioGenerator {
     Illegal_pedestrian_crossings pedestrianLocation;
 
     @Override
-    public PedestrianIllegallyCrossingModel generate(int scenarioId) {
-        PedestrianIllegallyCrossingModel model = new PedestrianIllegallyCrossingModel(super.generate(scenarioId));
+    public Model generate(int scenarioId) {
+        Model model = super.generate(scenarioId);
 
         pedestrian = factory.createPedestrian(getUniqueName("pedestrian", scenarioId));
 
@@ -25,9 +25,6 @@ public class PedestrianIllegallyCrossingSG extends BaseScenarioGenerator {
         model.getScenario().addHas_pedestrian(pedestrian);
 
         pedestrian.addPedestrian_has_location(pedestrianLocation);
-
-        model.setPedestrian(pedestrian);
-        model.setPedestrianLocation(pedestrianLocation);
 
         return model;
     }

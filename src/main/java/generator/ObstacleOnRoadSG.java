@@ -1,7 +1,7 @@
 package generator;
 
+import model.ObstacleOnRoadModel;
 import project.MyFactory;
-import project.Scenario;
 import project.Surrounding;
 
 import java.util.Random;
@@ -13,14 +13,12 @@ public class ObstacleOnRoadSG extends BaseScenarioGenerator {
     }
 
     @Override
-    public ObstacleOnRoadModel generate(int scenarioId) {
-        ObstacleOnRoadModel model = new ObstacleOnRoadModel(super.generate(scenarioId));
+    public Model generate(int scenarioId) {
+        Model model = super.generate(scenarioId);
 
         Surrounding obstacle = getObstacle(scenarioId);
 
         model.getVehicle().addHas_in_the_front(obstacle);
-
-        model.setObstacle(obstacle);
 
         return model;
     }

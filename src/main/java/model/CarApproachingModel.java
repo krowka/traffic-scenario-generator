@@ -1,13 +1,13 @@
-package generator;
+package model;
 
 import project.Driver;
 import project.Vehicle;
 
-public class CarOvertakingModel extends BaseScenarioModel{
+public class CarApproachingModel  extends BaseScenarioModel {
     private Vehicle vehice2;
     private Driver driver2;
 
-    public CarOvertakingModel(BaseScenarioModel model) {
+    public CarApproachingModel(BaseScenarioModel model) {
         super(model);
     }
 
@@ -27,3 +27,4 @@ public class CarOvertakingModel extends BaseScenarioModel{
         this.driver2 = driver2;
     }
 }
+

@@ -1,7 +1,3 @@
-import generator.AnimalOnRoadModel;
-import generator.AnimalOnRoadSG;
-import generator.BaseScenarioModel;
-import generator.ObstacleOnRoadSG;
 import generator.BaseScenarioGenerator;
 import generator.PedestrianIllegallyCrossingSG;
 import org.semanticweb.owlapi.apibinding.OWLManager;

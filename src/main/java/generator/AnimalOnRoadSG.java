@@ -1,8 +1,8 @@
 package generator;
 
+import model.AnimalOnRoadModel;
 import project.Animal;
 import project.MyFactory;
-import project.Scenario;
 
 public class AnimalOnRoadSG extends BaseScenarioGenerator {
 
@@ -11,14 +11,12 @@ public class AnimalOnRoadSG extends BaseScenarioGenerator {
     }
 
     @Override
-    public AnimalOnRoadModel generate(int scenarioId) {
-        AnimalOnRoadModel model = new AnimalOnRoadModel(super.generate(scenarioId));
+    public Model generate(int scenarioId) {
+        Model model = super.generate(scenarioId);
 
         Animal animal = factory.createAnimalSubclass(getUniqueName("animal", scenarioId));
 
         model.getVehicle().addHas_in_the_front(animal);
-
-        model.setAnimal(animal);
 
         return model;
     }

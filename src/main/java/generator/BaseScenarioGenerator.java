@@ -1,5 +1,6 @@
 package generator;
 
+import model.BaseScenarioModel;
 import project.Driver;
 import project.MyFactory;
 import project.Passenger;
@@ -10,7 +11,6 @@ import project.Time;
 import project.Vehicle;
 import project.Weather;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -57,7 +57,7 @@ public class BaseScenarioGenerator {
     /**
      * generate one basic scenario
      */
-    public BaseScenarioModel generate(){
+    public Model generate(){
         return generate(0);
     }
 
@@ -65,7 +65,7 @@ public class BaseScenarioGenerator {
      * ancillary method to create many scenarios
      */
     // generate basic scenario with id
-    protected BaseScenarioModel generate(int scenarioId) {
+    protected Model generate(int scenarioId) {
         // get new individuals
         Scenario scenario = factory.createScenario(getUniqueName("scenario", scenarioId));
 
@@ -106,7 +106,7 @@ public class BaseScenarioGenerator {
         roadType.addHas_lanes(2);
 
         // save in a model
-        BaseScenarioModel model = new BaseScenarioModel();
+        Model model = new Model();
 
         model.setScenario(scenario) ;
         model.setWeather(weather);
@@ -123,8 +123,8 @@ public class BaseScenarioGenerator {
     /**
      * generate numOfScenarios basic scenario, with IDs starting from startingId
      */
-    public ArrayList<BaseScenarioModel> generate(int numOfScenarios, int startingId) {
-        ArrayList<BaseScenarioModel> models = new ArrayList<>();
+    public ArrayList<Model> generate(int numOfScenarios, int startingId) {
+        ArrayList<Model> models = new ArrayList<>();
 
         for(int i = 0; i < numOfScenarios; i++)
             models.add(generate(startingId + i));

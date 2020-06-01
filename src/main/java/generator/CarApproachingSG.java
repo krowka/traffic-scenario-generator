@@ -1,9 +1,8 @@
 package generator;
 
+import model.CarApproachingModel;
 import project.Driver;
-import project.Entity;
 import project.MyFactory;
-import project.Scenario;
 import project.Vehicle;
 
 public class CarApproachingSG extends BaseScenarioGenerator {
@@ -13,8 +12,8 @@ public class CarApproachingSG extends BaseScenarioGenerator {
     }
 
     @Override
-    public CarApproachingModel generate(int scenarioId) {
-        CarApproachingModel model = new CarApproachingModel(super.generate(scenarioId));
+    public Model generate(int scenarioId) {
+        Model model = super.generate(scenarioId);
 
         Vehicle vehicle = factory.createVehicle(getUniqueName("vehicle", scenarioId));
 
@@ -28,9 +27,6 @@ public class CarApproachingSG extends BaseScenarioGenerator {
         vehicle.addHas_on_the_right(model.getSurrounding().get("RIGHT"));
         vehicle.addHas_on_the_left(model.getSurrounding().get("LEFT"));
         vehicle.addHas_in_the_front(vehicle);
-
-        model.setVehice2(vehicle);
-        model.setDriver2(driver);
 
         return model;
     }

@@ -1,9 +1,8 @@
 package generator;
 
+import model.CarOvertakingModel;
 import project.Driver;
-import project.Entity;
 import project.MyFactory;
-import project.Scenario;
 import project.Vehicle;
 
 public class CarOvertakingSG extends BaseScenarioGenerator {
@@ -13,8 +12,8 @@ public class CarOvertakingSG extends BaseScenarioGenerator {
     }
 
     @Override
-    public CarOvertakingModel generate(int scenarioId) {
-        CarOvertakingModel model = new CarOvertakingModel(super.generate(scenarioId));
+    public Model generate(int scenarioId) {
+        Model model = super.generate(scenarioId);
 
         Vehicle vehicle = factory.createVehicle(getUniqueName("vehicle", scenarioId));
 
@@ -27,9 +26,6 @@ public class CarOvertakingSG extends BaseScenarioGenerator {
         vehicle.addVehicle_has_speed_kmph(80);
         vehicle.addHas_on_the_right(model.getSurrounding().get("RIGHT"));
         vehicle.addHas_on_the_left(model.getSurrounding().get("LEFT"));
-
-        model.setVehice2(vehicle);
-        model.setDriver2(driver);
 
         return model;
     }

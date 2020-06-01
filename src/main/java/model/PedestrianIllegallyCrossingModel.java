@@ -1,4 +1,4 @@
-package generator;
+package model;
 
 import project.Illegal_pedestrian_crossings;
 import project.Pedestrian;
