@@ -1,6 +1,5 @@
 package generator;
 
-import model.PedestrianIllegallyCrossingModel;
 import project.Illegal_pedestrian_crossings;
 import project.MyFactory;
 import project.Pedestrian;

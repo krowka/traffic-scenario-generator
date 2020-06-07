@@ -1,6 +1,5 @@
 package generator;
 
-import model.ObstacleOnRoadModel;
 import project.MyFactory;
 import project.Surrounding;
 

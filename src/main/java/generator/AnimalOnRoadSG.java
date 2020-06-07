@@ -1,6 +1,5 @@
 package generator;
 
-import model.AnimalOnRoadModel;
 import project.Animal;
 import project.MyFactory;
 

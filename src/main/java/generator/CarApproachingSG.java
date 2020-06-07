@@ -1,6 +1,5 @@
 package generator;
 
-import model.CarApproachingModel;
 import project.Driver;
 import project.MyFactory;
 import project.Vehicle;

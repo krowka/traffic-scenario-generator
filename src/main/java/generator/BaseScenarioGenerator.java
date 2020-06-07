@@ -1,6 +1,5 @@
 package generator;
 
-import model.BaseScenarioModel;
 import project.Driver;
 import project.MyFactory;
 import project.Passenger;

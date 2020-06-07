@@ -38,7 +38,7 @@ public class Main {
 
 
 
-        factory.saveOwlOntology();
+ //       factory.saveOwlOntology();
     }
 
 
